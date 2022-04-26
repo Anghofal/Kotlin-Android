@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA008357"
+    tools:context=".register"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrasi"
+        android:textAlignment="center"
+        android:textColor="#FFFF8D"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/registerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#004B11"
+            android:backgroundTint="#CDDC39"
+            android:text="Register User"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+        android:id="@+id/registerBarber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#004B11"
+        android:backgroundTint="#CDDC39"
+        android:layout_marginStart="20dp"
+        android:text="Register Barber" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tampilanRegUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Username baru mu :"
+            android:textColor="#FFFF8D" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF8D"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Password baru mu :"
+            android:textColor="#FFFF8D" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF8D"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap :"
+            android:textColor="#FFFF8D" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF8D"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Umur Sekarang:"
+            android:textColor="#FFFF8D" />
+
+        <EditText
+            android:id="@+id/umur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF8D"
+            android:ems="2"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin :"
+            android:textColor="#FFFF8D" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/kelaminPria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pria"
+                android:textColor="#FFFF8D" />
+
+            <RadioButton
+                android:id="@+id/kelaminWanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wanita"
+                android:textColor="#FFFF8D" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Lengkap :"
+            android:textColor="#FFFF8D" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#FFFF8D"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/pesanUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDDC39"
+            android:text="Selesai"
+            android:textColor="#004B11" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tampilanRegBr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Username baru mu :"
+                android:textColor="#FFFF8D" />
+
+            <EditText
+                android:id="@+id/usernameBr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF8D"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Password baru mu :"
+                android:textColor="#FFFF8D" />
+
+            <EditText
+                android:id="@+id/passwordBr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF8D"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Barber Shop :"
+                android:textColor="#FFFF8D" />
+
+            <EditText
+                android:id="@+id/namaBr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF8D"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga:"
+                android:textColor="#FFFF8D" />
+
+            <EditText
+                android:id="@+id/hargaBr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFF8D"
+                android:ems="7"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat Barber Shop :"
+                android:textColor="#FFFF8D" />
+
+            <EditText
+                android:id="@+id/alamatBr"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="#FFFF8D"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deksripsi Barber Shop :"
+                android:textColor="#FFFF8D" />
+
+            <EditText
+                android:id="@+id/deksBr"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="#FFFF8D"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/sendRegBr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CDDC39"
+                android:text="Selesai"
+                android:textColor="#004B11" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
